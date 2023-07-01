@@ -1,0 +1,12 @@
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\bin\Debug\net6.0\FolkClothesShop.Common.deps.json
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\bin\Debug\net6.0\FolkClothesShop.Common.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\bin\Debug\net6.0\FolkClothesShop.Common.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\FolkClothesShop.Common.csproj.AssemblyReference.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\FolkClothesShop.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\FolkClothesShop.Common.AssemblyInfoInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\FolkClothesShop.Common.AssemblyInfo.cs
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\FolkClothesShop.Common.csproj.CoreCompileInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\FolkClothesShop.Common.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\refint\FolkClothesShop.Common.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\FolkClothesShop.Common.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Common\obj\Debug\net6.0\ref\FolkClothesShop.Common.dll

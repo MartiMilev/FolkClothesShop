@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop", "FolkClothesShop\FolkClothesShop.csproj", "{0B1FE3B0-E0CA-481E-9514-5536EBA6797E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{370FBDE8-FF78-447D-A4AA-75C7E321D266}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{94328C38-0A8E-49BE-8639-137742D8E6DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Common", "FolkClothesShop.Common\FolkClothesShop.Common.csproj", "{407BED15-0FD3-4A23-932E-DA7D789D4C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Data", "FolkClothesShop.Data\FolkClothesShop.Data.csproj", "{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Data.Models", "FolkClothesShop.Data.Models\FolkClothesShop.Data.Models.csproj", "{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B1FE3B0-E0CA-481E-9514-5536EBA6797E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B1FE3B0-E0CA-481E-9514-5536EBA6797E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B1FE3B0-E0CA-481E-9514-5536EBA6797E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B1FE3B0-E0CA-481E-9514-5536EBA6797E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407BED15-0FD3-4A23-932E-DA7D789D4C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407BED15-0FD3-4A23-932E-DA7D789D4C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407BED15-0FD3-4A23-932E-DA7D789D4C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407BED15-0FD3-4A23-932E-DA7D789D4C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B1FE3B0-E0CA-481E-9514-5536EBA6797E} = {370FBDE8-FF78-447D-A4AA-75C7E321D266}
+		{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B} = {94328C38-0A8E-49BE-8639-137742D8E6DA}
+		{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D} = {94328C38-0A8E-49BE-8639-137742D8E6DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0A54DA7-E72C-4E21-8EE8-65A5F8453AD1}
+	EndGlobalSection
+EndGlobal

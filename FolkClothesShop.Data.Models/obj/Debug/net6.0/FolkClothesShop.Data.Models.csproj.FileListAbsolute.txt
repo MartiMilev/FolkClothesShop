@@ -1,0 +1,12 @@
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\bin\Debug\net6.0\FolkClothesShop.Data.Models.deps.json
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\bin\Debug\net6.0\FolkClothesShop.Data.Models.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\bin\Debug\net6.0\FolkClothesShop.Data.Models.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\FolkClothesShop.Data.Models.csproj.AssemblyReference.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\FolkClothesShop.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\FolkClothesShop.Data.Models.AssemblyInfoInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\FolkClothesShop.Data.Models.AssemblyInfo.cs
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\FolkClothesShop.Data.Models.csproj.CoreCompileInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\FolkClothesShop.Data.Models.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\refint\FolkClothesShop.Data.Models.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\FolkClothesShop.Data.Models.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data.Models\obj\Debug\net6.0\ref\FolkClothesShop.Data.Models.dll

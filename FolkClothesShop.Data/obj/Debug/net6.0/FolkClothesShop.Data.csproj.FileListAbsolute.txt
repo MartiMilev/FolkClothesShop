@@ -1,0 +1,17 @@
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Data.deps.json
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Data.runtimeconfig.json
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Data.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.csproj.AssemblyReference.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.AssemblyInfoInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.AssemblyInfo.cs
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.csproj.CoreCompileInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\refint\FolkClothesShop.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.genruntimeconfig.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\ref\FolkClothesShop.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Common.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Common.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.csproj.CopyComplete
