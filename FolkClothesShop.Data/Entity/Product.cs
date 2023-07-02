@@ -11,19 +11,28 @@ namespace FolkClothesShop.Data.Entity
     public class Product
     {
         [Key]
-        public int ProductId { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        public string Name { get; set; } = null!;
+        public string Name { get; set; }
 
+        public string Description { get; set; }
+
+        public string Image { get; set; }
+
+        [Required]
         public decimal Price { get; set; }
 
-        public int StockQuantity { get; set; }
+        [Required]
+        public int Stock { get; set; }
 
-        public DateTime CreatedAt { get; set; }
-        public string Description { get; set; } = null!;
+        [Required]
+        public int CategoryId { get; set; }
 
-        public virtual ICollection<OrderItem> OrderItems { get; set; } = null!;
+        // Навигационни пропъртита
+        [ForeignKey("CategoryId")]
+        public virtual Category Category { get; set; }
+
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; } = null!;
     }
 }

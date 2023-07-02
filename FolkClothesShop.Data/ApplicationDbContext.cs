@@ -1,5 +1,5 @@
 ﻿using FolkClothesShop.Data.Entity;
-using FolkClothesShop.Data.Models;
+using FolkClothesShop.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
@@ -12,33 +12,22 @@ namespace FolkClothesShop.Data
             : base(options)
         {
         }
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(builder);
-            builder.Entity<OrderItem>()
-                .HasKey(oi => new { oi.OrderId, oi.ProductId });
+            base.OnModelCreating(modelBuilder);
+            
+           
 
-            builder.Entity<Order>()
-                .HasMany(o => o.OrderItems)
-                .WithOne(oi => oi.Order)
-                .HasForeignKey(oi => oi.OrderId);
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.Category)
+                .WithMany(c => c.Products)
+                .HasForeignKey(p => p.CategoryId);
 
-            builder.Entity<Product>()
-                .HasMany(p => p.OrderItems)
-                .WithOne(oi => oi.Product)
-                .HasForeignKey(oi => oi.ProductId);
-
-            builder.Entity<Customer>()
-                .HasMany(c => c.Orders)
-                .WithOne(o => o.Customer)
-                .HasForeignKey(o => o.CustomerId);
         }
-        public DbSet<Product> Products { get; set; }
-
-        public DbSet<Customer> Customers { get; set; }
-
-        public DbSet<Moderators> Moderators { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

@@ -12,21 +12,32 @@ namespace FolkClothesShop.Data.Entity
     public class Customer
     {
         [Key]
-        public int CustomerId { get; set; }
-
-        [Required]
-        [MaxLength(100)]
-        public string Name { get; set; } = null!;
+        public int Id { get; set; }
 
         [Required]
         [EmailAddress]
         public string Email { get; set; } = null!;
 
-        public virtual ICollection<Order> Orders { get; set; } = null!;
         [Required]
-        public string UserId { get; set; } = null!;
+        public string FirstName { get; set; } = null!;
 
-        [ForeignKey(nameof(UserId))]
-        public IdentityUser User { get; set; } = null!;
+        [Required]
+        public string LastName { get; set; } = null!;
+
+        [Required]
+        public string Password { get; set; } = null!;
+
+        [Required]
+        public int PostCode { get; set; }
+
+        [Required]
+        public string City { get; set; } = null!;
+
+        [Required]
+        public string Phone { get; set; } = null!;
+
+        // Навигационни пропъртита
+        public ICollection<Order> Orders { get; set; } = null!;
+
     }
 }

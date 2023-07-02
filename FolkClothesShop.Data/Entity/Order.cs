@@ -11,14 +11,21 @@ namespace FolkClothesShop.Data.Entity
     public class Order
     {
         [Key]
-        public int OrderId { get; set; }
+        public int Id { get; set; }
 
+        [Required]
+        public decimal OrderTotal { get; set; }
+
+
+        [Required]
         public DateTime OrderDate { get; set; }
-
+        [Required]
         public int CustomerId { get; set; }
 
+        // Навигационни пропъртита
+        [ForeignKey("CustomerId")]
         public virtual Customer Customer { get; set; } = null!;
 
-        public virtual ICollection<OrderItem> OrderItems { get; set; } = null!;
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; } = null!;
     }
 }
