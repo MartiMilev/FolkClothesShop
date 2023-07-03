@@ -2,8 +2,7 @@
 @model RegisterModel
 @{
 	ViewBag.Title = "Registration";
-	Layout = "~/Views/Shared/_Layout.cshtml"; // Ако използвате общ шаблон (layout)
-}
+	Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 <style>
 	body {
@@ -56,12 +55,11 @@
 </style>
 
 <div class="registration-form">
-
 	 <font color="#FFFFFF">
 		<h2>Registration</h2>
 	</font>
 
-	<form action="/Registration/Register" method="post">
+	 <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
 		<font color="#FFFFFF" for="Name:">
 		<label for="name">Name:</label>
 		</font>

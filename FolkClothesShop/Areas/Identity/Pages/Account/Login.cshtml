@@ -3,7 +3,7 @@
 
 @{
     ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml"; // Ако използвате общ шаблон (layout)
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
 }
 
 <style>
@@ -60,22 +60,24 @@
 </style>
 
 <div class="login-form">
+
     <font color="#FFFFFF">
         <h2>Login</h2>
     </font>
-    
 
-    <form action="/Login" method="post">
+    <form id="account" method="post">
+    <font color="#FFFFFF" for="username">
+            <h4>Email:</h4>
+       
+        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+         <span asp-validation-for="Input.Email" class="text-danger"></span>
         <font color="#FFFFFF" for="username">
-            <h4>Username:</h4>
         </font>
-        <input type="text" id="username" name="username" required  />
         <font color="#FFFFFF" for="password">
             <h4>Password:</h4>
         </font>
-       
-        <input type="password" id="password" name="password" required />
-
+            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
         <input type="submit" value="Login" />
     </form>
 </div>

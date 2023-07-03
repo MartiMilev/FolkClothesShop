@@ -1,4 +1,5 @@
 ﻿using FolkClothesShop.Models;
+using FolkClothesShop.Models.Home;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -15,7 +16,7 @@ namespace FolkClothesShop.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(new IndexViewModel());
         }
 
         public IActionResult Privacy()
