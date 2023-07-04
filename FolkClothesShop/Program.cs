@@ -1,4 +1,6 @@
+using FolkClothesShop.Contacts;
 using FolkClothesShop.Data;
+using FolkClothesShop.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
@@ -27,6 +29,7 @@ namespace FolkClothesShop
             });
 
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient < IProductService,ProductService>();
 
             var app = builder.Build();
 

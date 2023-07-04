@@ -14,11 +14,11 @@ namespace FolkClothesShop.Data.Entity
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
 
-        public string Image { get; set; }
+        public string Image { get; set; } = null!;
 
         [Required]
         public decimal Price { get; set; }
@@ -29,9 +29,8 @@ namespace FolkClothesShop.Data.Entity
         [Required]
         public int CategoryId { get; set; }
 
-        // Навигационни пропъртита
         [ForeignKey("CategoryId")]
-        public virtual Category Category { get; set; }
+        public virtual Category Category { get; set; } = null!;
 
         public virtual ICollection<OrderDetail> OrderDetails { get; set; } = null!;
     }

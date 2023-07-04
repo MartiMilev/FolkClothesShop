@@ -1,4 +1,5 @@
-﻿using FolkClothesShop.Models;
+﻿using FolkClothesShop.Contacts;
+using FolkClothesShop.Models;
 using FolkClothesShop.Models.Home;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -7,16 +8,17 @@ namespace FolkClothesShop.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IProductService products;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IProductService products)
         {
-            _logger = logger;
+			this.products = products;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View(new IndexViewModel());
+            var allProducts = await products.GetProductsAsync();
+            return View(allProducts);
         }
 
         public IActionResult Privacy()
