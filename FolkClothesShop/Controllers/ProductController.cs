@@ -2,11 +2,17 @@
 using Microsoft.AspNetCore.Mvc;
 using FolkClothesShop.Models.Home;
 using FolkClothesShop.Models.Products;
+using FolkClothesShop.Contacts;
 
 namespace FolkClothesShop.Controllers
 {
     public class ProductController : Controller
     {
+        private readonly IProductService product;
+        public ProductController(IProductService products)
+        {
+            product= products;
+        }
         [AllowAnonymous]
         public async Task<IActionResult> All()
         {

@@ -21,13 +21,23 @@ namespace FolkClothesShop.Data
             modelBuilder.Entity<Product>()
                 .HasOne(p => p.Category)
                 .WithMany(c => c.Products)
-                .HasForeignKey(p => p.CategoryId);
+                .HasForeignKey(p => p.CategoryId)
+                .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder
+                .Entity<Product>()
+                .HasOne(a => a.Admin)
+                .WithMany()
+                .HasForeignKey(h=>h.AdmintId)
+                .OnDelete(DeleteBehavior.Restrict);
+                
         }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+
     }
 }

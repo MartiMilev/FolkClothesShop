@@ -15,9 +15,10 @@ namespace FolkClothesShop.Data.Entity
 
         [Required]
         public string Name { get; set; } = null!;
-
+        [Required]
+        [StringLength(200,MinimumLength =10)]
         public string Description { get; set; } = null!;
-
+        [Required]
         public string Image { get; set; } = null!;
 
         [Required]
@@ -31,7 +32,9 @@ namespace FolkClothesShop.Data.Entity
 
         [ForeignKey("CategoryId")]
         public virtual Category Category { get; set; } = null!;
-
+        [Required]
+        public int AdmintId { get; set; }
+        public Admin Admin { get; set; } = null!;
         public virtual ICollection<OrderDetail> OrderDetails { get; set; } = null!;
     }
 }

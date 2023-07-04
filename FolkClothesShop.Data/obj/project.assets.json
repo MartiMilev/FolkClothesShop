@@ -864,16 +864,6 @@
             "rid": "win"
           }
         }
-      },
-      "FolkClothesShop.Common/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/FolkClothesShop.Common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FolkClothesShop.Common.dll": {}
-        }
       }
     }
   },
@@ -2186,16 +2176,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "FolkClothesShop.Common/1.0.0": {
-      "type": "project",
-      "path": "../FolkClothesShop.Common/FolkClothesShop.Common.csproj",
-      "msbuildProject": "../FolkClothesShop.Common/FolkClothesShop.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FolkClothesShop.Common >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.11"
@@ -2227,11 +2211,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Common\\FolkClothesShop.Common.csproj": {
-              "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Common\\FolkClothesShop.Common.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

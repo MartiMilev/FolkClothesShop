@@ -3936,21 +3936,10 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "FolkClothesShop.Common/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/FolkClothesShop.Common.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FolkClothesShop.Common.dll": {}
-        }
-      },
       "FolkClothesShop.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "FolkClothesShop.Common": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.11"
         },
@@ -11201,11 +11190,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "FolkClothesShop.Common/1.0.0": {
-      "type": "project",
-      "path": "../FolkClothesShop.Common/FolkClothesShop.Common.csproj",
-      "msbuildProject": "../FolkClothesShop.Common/FolkClothesShop.Common.csproj"
-    },
     "FolkClothesShop.Data/1.0.0": {
       "type": "project",
       "path": "../FolkClothesShop.Data/FolkClothesShop.Data.csproj",
@@ -11214,7 +11198,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FolkClothesShop.Common >= 1.0.0",
       "FolkClothesShop.Data >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.11",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.18",
@@ -11251,9 +11234,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Common\\FolkClothesShop.Common.csproj": {
-              "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Common\\FolkClothesShop.Common.csproj"
-            },
             "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj": {
               "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj"
             }

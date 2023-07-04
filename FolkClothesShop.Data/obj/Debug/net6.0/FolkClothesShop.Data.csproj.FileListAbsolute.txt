@@ -12,6 +12,3 @@ D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\n
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.pdb
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.genruntimeconfig.cache
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\ref\FolkClothesShop.Data.dll
-D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Common.dll
-D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\bin\Debug\net6.0\FolkClothesShop.Common.pdb
-D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Data\obj\Debug\net6.0\FolkClothesShop.Data.csproj.CopyComplete

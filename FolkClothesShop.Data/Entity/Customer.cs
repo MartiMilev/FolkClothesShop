@@ -36,7 +36,6 @@ namespace FolkClothesShop.Data.Entity
         [Required]
         public string Phone { get; set; } = null!;
 
-        // Навигационни пропъртита
         public ICollection<Order> Orders { get; set; } = null!;
 
     }

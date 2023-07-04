@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace FolkClothesShop.Common
 {
-    internal class GeneralApplicationConstants
+    public static class GeneralApplicationConstants
     {
+        const int DescriptionMinLegth = 10;
+        const int DescriptionMaxLegth = 200;
     }
 }

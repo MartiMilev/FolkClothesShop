@@ -13,6 +13,22 @@ namespace FolkClothesShop.Services
 			this.data = data;
 		}
 
+		public async Task<IEnumerable<ProductCategoryServiceModel>> Add()
+		{
+
+		}
+
+		public async Task<IEnumerable<ProductCategoryServiceModel>> AllCategories()
+		{
+			return await data
+				.Categories
+				.Select(c => new ProductCategoryServiceModel
+				{
+					Id = c.Id,
+					Name = c.Name
+				}).ToListAsync();
+		}
+
 		public async Task<IEnumerable<ProductIndexServiceModel>> GetProductsAsync()
 		{
 			return await data

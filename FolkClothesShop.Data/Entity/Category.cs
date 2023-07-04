@@ -15,8 +15,7 @@ namespace FolkClothesShop.Data.Entity
         [Required]
         public string Name { get; set; } = null!;
 
-        // Навигационни пропъртита
-        public ICollection<Product> Products { get; set; } = null!;
+        public ICollection<Product> Products { get; set; } = new List<Product>();
 
     }
 }
