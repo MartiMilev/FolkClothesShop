@@ -15,11 +15,7 @@ namespace FolkClothesShop.Services
 			this.data = data;
 		}
 
-		[HttpPost]
-		public async Task Add(ProductFormModel model)
-		{
-			return await RedirectToAction(nameof(data.OrderDetails), new { id = "1" });
-		}
+		
 
 		public async Task<IEnumerable<ProductCategoryServiceModel>> AllCategories()
 		{

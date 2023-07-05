@@ -8,7 +8,6 @@ namespace FolkClothesShop.Contacts
 	{
 		Task<IEnumerable<ProductIndexServiceModel>> GetProductsAsync();
 		Task<IEnumerable<ProductCategoryServiceModel>> AllCategories ();
-		Task Add (ProductFormModel model);
 		Task<int> Create(string description, string name, string image, decimal price, int categoryId, int adminId,int stock);
 
 	}
