@@ -2,7 +2,7 @@
 {
 	public interface IAdminServices
 	{
-		Task<bool> ExistingByAdmin(string userId);
+		Task<bool> ExistingById(string userId);
 		Task Create(string userId);
 
 	}

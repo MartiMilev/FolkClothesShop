@@ -1,5 +1,6 @@
 ﻿using FolkClothesShop.Contacts;
 using FolkClothesShop.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace FolkClothesShop.Services
 {
@@ -10,14 +11,19 @@ namespace FolkClothesShop.Services
 		{
 			this.data = data;
 		}
-		public Task Create(string userId)
+		public async Task Create(string userId)
 		{
-			var agent = new Product
+			var agent = new FolkClothesShop.Data.Entity.Admin()
+			{
+				UserId = userId
+			};
+			await data.AddAsync(agent);
+			await data.SaveChangesAsync();
 		}
 
-		public Task<bool> ExistingByAdmin(string userId)
+		public async Task<bool> ExistingById(string userId)
 		{
-			throw new NotImplementedException();
+			return await data.Admins.AnyAsync(a=>a.UserId == userId);
 		}
 	}
 }

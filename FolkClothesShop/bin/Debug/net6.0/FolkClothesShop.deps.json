@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "FolkClothesShop/1.0.0": {
         "dependencies": {
-          "FolkClothesShop.Common": "1.0.0",
           "FolkClothesShop.Data": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.11",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.18",
@@ -2573,14 +2572,8 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "FolkClothesShop.Common/1.0.0": {
-        "runtime": {
-          "FolkClothesShop.Common.dll": {}
-        }
-      },
       "FolkClothesShop.Data/1.0.0": {
         "dependencies": {
-          "FolkClothesShop.Common": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.18",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.18"
         },
@@ -4163,11 +4156,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "FolkClothesShop.Common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "FolkClothesShop.Data/1.0.0": {
       "type": "project",

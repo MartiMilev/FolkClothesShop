@@ -9,9 +9,12 @@ namespace FolkClothesShop.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService product;
-        public ProductController(IProductService products)
+        private readonly IAdminServices admins;
+
+        public ProductController(IProductService products, IAdminServices admin)
         {
             product= products;
+            this.admins = admin;
         }
         [AllowAnonymous]
         public async Task<IActionResult> All()
@@ -28,9 +31,9 @@ namespace FolkClothesShop.Controllers
             return View(new ProductDetailViewModel());
         }
         [HttpPost]
-        public async Task<IActionResult> Add(ProductFormModel model)
+        public async Task<IActionResult> Add()
         {
-            return RedirectToAction(nameof(Details), new {id="1"});
+            return View();
         }
 
     }

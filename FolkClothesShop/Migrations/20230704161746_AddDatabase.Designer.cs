@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FolkClothesShop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230703141542_InitializeDb")]
-    partial class InitializeDb
+    [Migration("20230704161746_AddDatabase")]
+    partial class AddDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,25 @@ namespace FolkClothesShop.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Admin", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Admins");
+                });
 
             modelBuilder.Entity("FolkClothesShop.Data.Entity.Category", b =>
                 {
@@ -145,12 +164,16 @@ namespace FolkClothesShop.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("AdmintId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("Image")
                         .IsRequired()
@@ -167,6 +190,8 @@ namespace FolkClothesShop.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AdmintId");
 
                     b.HasIndex("CategoryId");
 
@@ -375,6 +400,17 @@ namespace FolkClothesShop.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Admin", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("FolkClothesShop.Data.Entity.Order", b =>
                 {
                     b.HasOne("FolkClothesShop.Data.Entity.Customer", "Customer")
@@ -407,11 +443,19 @@ namespace FolkClothesShop.Migrations
 
             modelBuilder.Entity("FolkClothesShop.Data.Entity.Product", b =>
                 {
+                    b.HasOne("FolkClothesShop.Data.Entity.Admin", "Admin")
+                        .WithMany()
+                        .HasForeignKey("AdmintId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("FolkClothesShop.Data.Entity.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Admin");
 
                     b.Navigation("Category");
                 });

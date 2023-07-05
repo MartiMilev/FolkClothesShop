@@ -29,7 +29,9 @@ namespace FolkClothesShop
             });
 
             builder.Services.AddControllersWithViews();
+
             builder.Services.AddTransient < IProductService,ProductService>();
+            builder.Services.AddTransient < IAdminServices,AdminService>();
 
             var app = builder.Build();
 
