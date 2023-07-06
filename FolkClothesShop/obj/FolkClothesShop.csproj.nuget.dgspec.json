@@ -4,6 +4,61 @@
     "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop\\FolkClothesShop.csproj": {}
   },
   "projects": {
+    "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj",
+        "projectName": "FolkClothesShop.Data.Models",
+        "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -75,6 +130,188 @@
         }
       }
     },
+    "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj",
+        "projectName": "FolkClothesShop.Services.Data",
+        "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj": {
+                "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj"
+              },
+              "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj": {
+                "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\FolkClothesShop.Web.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\FolkClothesShop.Web.Infrastructure.csproj",
+        "projectName": "FolkClothesShop.Web.Infrastructure",
+        "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\FolkClothesShop.Web.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj": {
+                "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj",
+        "projectName": "FolkClothesShop.Web.ViewModel",
+        "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop\\FolkClothesShop.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -99,8 +336,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj": {
+                "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj"
+              },
               "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj": {
                 "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj"
+              },
+              "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj": {
+                "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj"
+              },
+              "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\FolkClothesShop.Web.Infrastructure.csproj": {
+                "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\FolkClothesShop.Web.Infrastructure.csproj"
+              },
+              "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj": {
+                "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj"
               }
             }
           }

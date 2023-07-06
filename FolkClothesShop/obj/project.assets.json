@@ -3949,6 +3949,54 @@
         "runtime": {
           "bin/placeholder/FolkClothesShop.Data.dll": {}
         }
+      },
+      "FolkClothesShop.Data.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FolkClothesShop.Data.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FolkClothesShop.Data.Models.dll": {}
+        }
+      },
+      "FolkClothesShop.Services.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FolkClothesShop.Data": "1.0.0",
+          "FolkClothesShop.Web.ViewModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FolkClothesShop.Services.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FolkClothesShop.Services.Data.dll": {}
+        }
+      },
+      "FolkClothesShop.Web.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FolkClothesShop.Services.Data": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FolkClothesShop.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FolkClothesShop.Web.Infrastructure.dll": {}
+        }
+      },
+      "FolkClothesShop.Web.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FolkClothesShop.Web.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FolkClothesShop.Web.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -11194,11 +11242,35 @@
       "type": "project",
       "path": "../FolkClothesShop.Data/FolkClothesShop.Data.csproj",
       "msbuildProject": "../FolkClothesShop.Data/FolkClothesShop.Data.csproj"
+    },
+    "FolkClothesShop.Data.Models/1.0.0": {
+      "type": "project",
+      "path": "../FolkClothesShop.Data.Models/FolkClothesShop.Data.Models.csproj",
+      "msbuildProject": "../FolkClothesShop.Data.Models/FolkClothesShop.Data.Models.csproj"
+    },
+    "FolkClothesShop.Services.Data/1.0.0": {
+      "type": "project",
+      "path": "../FolkClothesShop.Services.Data/FolkClothesShop.Services.Data.csproj",
+      "msbuildProject": "../FolkClothesShop.Services.Data/FolkClothesShop.Services.Data.csproj"
+    },
+    "FolkClothesShop.Web.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FolkClothesShop.Web.Infrastructure/FolkClothesShop.Web.Infrastructure.csproj",
+      "msbuildProject": "../FolkClothesShop.Web.Infrastructure/FolkClothesShop.Web.Infrastructure.csproj"
+    },
+    "FolkClothesShop.Web.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../FolkClothesShop.Web.ViewModel/FolkClothesShop.Web.ViewModel.csproj",
+      "msbuildProject": "../FolkClothesShop.Web.ViewModel/FolkClothesShop.Web.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "FolkClothesShop.Data >= 1.0.0",
+      "FolkClothesShop.Data.Models >= 1.0.0",
+      "FolkClothesShop.Services.Data >= 1.0.0",
+      "FolkClothesShop.Web.Infrastructure >= 1.0.0",
+      "FolkClothesShop.Web.ViewModel >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.11",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.18",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.18",
@@ -11234,8 +11306,20 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj": {
+              "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj"
+            },
             "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj": {
               "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj"
+            },
+            "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj": {
+              "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj"
+            },
+            "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\FolkClothesShop.Web.Infrastructure.csproj": {
+              "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.Infrastructure\\FolkClothesShop.Web.Infrastructure.csproj"
+            },
+            "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj": {
+              "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Web.ViewModel\\FolkClothesShop.Web.ViewModel.csproj"
             }
           }
         }

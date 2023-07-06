@@ -51,107 +51,29 @@ namespace FolkClothesShop.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
-                });
 
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.Customer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PostCode")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.Order", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("OrderTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.OrderDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("ProductPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("ProductQuantity")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("SubTotal")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("OrderId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("OrderDetails");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Момче"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Момиче"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Аксесоари"
+                        });
                 });
 
             modelBuilder.Entity("FolkClothesShop.Data.Entity.Product", b =>
@@ -162,7 +84,7 @@ namespace FolkClothesShop.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("AdmintId")
+                    b.Property<int>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<int>("CategoryId")
@@ -170,30 +92,88 @@ namespace FolkClothesShop.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("ImageUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("Stock")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AdmintId");
+                    b.HasIndex("AdminId");
 
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Най-хубавата носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/267074128_569156850818756_8705324827277707870_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3aF7k0tMHR8AX8rR1kC&_nc_ht=scontent.fsof8-1.fna&oh=00_AfDjjNWBjjVAlfUH-4pRZC4FNu6hqh8OJ0B_O9Pvs1oKbg&oe=64AB134F",
+                            Price = 56.00m,
+                            Title = "Тракийска носия"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AdminId = 1,
+                            CategoryId = 2,
+                            Description = "Най-хубавата дамска носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/242844727_517782082622900_481886533923826782_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E6ONkspewXsAX8tTOFH&_nc_ht=scontent.fsof8-1.fna&oh=00_AfAaV-sf-iIaP9RBpFb30yEaGtMgZb1c555Ab7X_J_QCiQ&oe=64AB6E19",
+                            Price = 78.00m,
+                            Title = "Тракийска носия"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AdminId = 1,
+                            CategoryId = 2,
+                            Description = "Най-хубавата носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t1.6435-9/146874580_353052245762552_3031650708666144962_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=GAZN-Vz7d_MAX9jfRNN&_nc_ht=scontent.fsof8-1.fna&oh=00_AfBbpeg0Sn4CV_eEvg9Qm3uXhNKS1n3lq0dvC2hH51iq5w&oe=64CE4CFA",
+                            Price = 78.00m,
+                            Title = "Родопска носия"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Най-хубавата носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t1.6435-9/147282029_353052235762553_8637670463306638015_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=ZhdcZIAVKckAX975rw7&_nc_ht=scontent.fsof8-1.fna&oh=00_AfCRtPxohx0G0dWYR6Tr8GwXQXGsPykLAgAf3aVIm1n5Vw&oe=64CE37DE",
+                            Price = 78.00m,
+                            Title = "Родопска носия"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Потурчета за малките сладурчета",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/267565025_569157017485406_4196785183282386807_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pvEtN8UWiv8AX_lCcE1&_nc_ht=scontent.fsof8-1.fna&oh=00_AfAvwr7GlR7KJAS2ZNAdejCMCIoynczLWR3BnskeRT08Zg&oe=64ABE6FA",
+                            Price = 12.00m,
+                            Title = "Потури"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Калпак за малкия юнак",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/267325300_569156934152081_3269888927601348101_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pQqNHetzV8wAX_zd8wl&_nc_ht=scontent.fsof8-1.fna&oh=00_AfD2VPZM7skYf3oNZ3_hJ1oezTTDuDwg4XUmtXEkwa4EHg&oe=64ABF1DE",
+                            Price = 11.00m,
+                            Title = "Калпак"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -409,41 +389,11 @@ namespace FolkClothesShop.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.Order", b =>
-                {
-                    b.HasOne("FolkClothesShop.Data.Entity.Customer", "Customer")
-                        .WithMany("Orders")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.OrderDetail", b =>
-                {
-                    b.HasOne("FolkClothesShop.Data.Entity.Order", "Order")
-                        .WithMany("OrderDetails")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("FolkClothesShop.Data.Entity.Product", "Product")
-                        .WithMany("OrderDetails")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("FolkClothesShop.Data.Entity.Product", b =>
                 {
                     b.HasOne("FolkClothesShop.Data.Entity.Admin", "Admin")
                         .WithMany()
-                        .HasForeignKey("AdmintId")
+                        .HasForeignKey("AdminId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -512,21 +462,6 @@ namespace FolkClothesShop.Migrations
             modelBuilder.Entity("FolkClothesShop.Data.Entity.Category", b =>
                 {
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.Customer", b =>
-                {
-                    b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.Order", b =>
-                {
-                    b.Navigation("OrderDetails");
-                });
-
-            modelBuilder.Entity("FolkClothesShop.Data.Entity.Product", b =>
-                {
-                    b.Navigation("OrderDetails");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,6 +1,5 @@
-﻿using FolkClothesShop.Contacts;
-using FolkClothesShop.Models;
-using FolkClothesShop.Models.Home;
+﻿using FolkClothesShop.Services.Data.Interfaces;
+using FolkClothesShop.Web.ViewModel.Home;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -8,23 +7,21 @@ namespace FolkClothesShop.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IProductService products;
-
-        public HomeController(IProductService products)
+        private readonly ILogger<HomeController> _logger;
+        private readonly IProductService productService;
+        public HomeController(ILogger<HomeController> logger, IProductService productService)
         {
-			this.products = products;
+            _logger = logger;
+            this.productService = productService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var allProducts = await products.GetProductsAsync();
-            return View(allProducts);
+            IEnumerable<IndexViewModel> viewModel = 
+                await this.productService.AllProductsAsync();
+            return View(viewModel);
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

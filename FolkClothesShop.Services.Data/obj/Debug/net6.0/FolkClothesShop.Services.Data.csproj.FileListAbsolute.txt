@@ -1,0 +1,17 @@
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Services.Data.deps.json
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Services.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Services.Data.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Web.ViewModel.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Data.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Web.ViewModel.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.csproj.AssemblyReference.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.AssemblyInfoInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.AssemblyInfo.cs
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.csproj.CoreCompileInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.csproj.CopyComplete
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\refint\FolkClothesShop.Services.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\ref\FolkClothesShop.Services.Data.dll

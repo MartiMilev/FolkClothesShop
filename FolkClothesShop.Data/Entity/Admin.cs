@@ -10,6 +10,7 @@ namespace FolkClothesShop.Data.Entity
 {
 	public class Admin
 	{
+		[Key]
 		public int Id { get; set; }
 		[Required]
 		public string UserId { get; set; } = null!;

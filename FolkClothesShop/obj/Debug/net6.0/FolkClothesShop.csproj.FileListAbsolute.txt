@@ -258,3 +258,11 @@ D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Data.Models.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Services.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Web.ViewModel.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Data.Models.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Services.Data.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Web.ViewModel.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Web.Infrastructure.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Web.Infrastructure.pdb

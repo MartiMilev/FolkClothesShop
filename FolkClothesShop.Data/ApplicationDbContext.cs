@@ -3,41 +3,26 @@ using FolkClothesShop.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
+using System.Reflection;
 
 namespace FolkClothesShop.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            Assembly configAssembly = Assembly.GetAssembly(typeof(ApplicationDbContext))??
+                Assembly.GetExecutingAssembly();
+            modelBuilder.ApplyConfigurationsFromAssembly(configAssembly);
             base.OnModelCreating(modelBuilder);
-            
-           
-
-            modelBuilder.Entity<Product>()
-                .HasOne(p => p.Category)
-                .WithMany(c => c.Products)
-                .HasForeignKey(p => p.CategoryId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder
-                .Entity<Product>()
-                .HasOne(a => a.Admin)
-                .WithMany()
-                .HasForeignKey(h=>h.AdmintId)
-                .OnDelete(DeleteBehavior.Restrict);
-                
         }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Admin> Admins { get; set; }
-
     }
 }

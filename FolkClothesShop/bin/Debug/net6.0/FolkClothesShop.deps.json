@@ -9,6 +9,10 @@
       "FolkClothesShop/1.0.0": {
         "dependencies": {
           "FolkClothesShop.Data": "1.0.0",
+          "FolkClothesShop.Data.Models": "1.0.0",
+          "FolkClothesShop.Services.Data": "1.0.0",
+          "FolkClothesShop.Web.Infrastructure": "1.0.0",
+          "FolkClothesShop.Web.ViewModel": "1.0.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.11",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.18",
           "Microsoft.AspNetCore.Identity.UI": "6.0.18",
@@ -2580,6 +2584,34 @@
         "runtime": {
           "FolkClothesShop.Data.dll": {}
         }
+      },
+      "FolkClothesShop.Data.Models/1.0.0": {
+        "runtime": {
+          "FolkClothesShop.Data.Models.dll": {}
+        }
+      },
+      "FolkClothesShop.Services.Data/1.0.0": {
+        "dependencies": {
+          "FolkClothesShop.Data": "1.0.0",
+          "FolkClothesShop.Web.ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "FolkClothesShop.Services.Data.dll": {}
+        }
+      },
+      "FolkClothesShop.Web.Infrastructure/1.0.0": {
+        "dependencies": {
+          "FolkClothesShop.Services.Data": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "FolkClothesShop.Web.Infrastructure.dll": {}
+        }
+      },
+      "FolkClothesShop.Web.ViewModel/1.0.0": {
+        "runtime": {
+          "FolkClothesShop.Web.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -4158,6 +4190,26 @@
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
     "FolkClothesShop.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FolkClothesShop.Data.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FolkClothesShop.Services.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FolkClothesShop.Web.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FolkClothesShop.Web.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

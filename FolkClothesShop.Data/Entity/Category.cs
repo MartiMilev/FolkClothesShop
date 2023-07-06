@@ -9,13 +9,12 @@ namespace FolkClothesShop.Data.Entity
 {
     public class Category
     {
-        [Key]
-        public int Id { get; set; }
+		[Key]
+		public int Id { get; set; }
+		[Required]
+		[StringLength(10, MinimumLength = 5)]
+		public string Name { get; set; } = null!;
+		public IEnumerable<Product> Products { get; set; } = new List<Product>();
+	}
 
-        [Required]
-        public string Name { get; set; } = null!;
-
-        public ICollection<Product> Products { get; set; } = new List<Product>();
-
-    }
 }
