@@ -23,6 +23,7 @@
     <ProjectReference Include="..\FolkClothesShop.Data.Models\FolkClothesShop.Data.Models.csproj" />
     <ProjectReference Include="..\FolkClothesShop.Data\FolkClothesShop.Data.csproj" />
     <ProjectReference Include="..\FolkClothesShop.Services.Data\FolkClothesShop.Services.Data.csproj" />
+    <ProjectReference Include="..\FolkClothesShop.Web.Infrastructure.Extensions\FolkClothesShop.Web.Infrastructure.Extensions.csproj" />
     <ProjectReference Include="..\FolkClothesShop.Web.Infrastructure\FolkClothesShop.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\FolkClothesShop.Web.ViewModel\FolkClothesShop.Web.ViewModel.csproj" />
   </ItemGroup>

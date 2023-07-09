@@ -25,5 +25,12 @@ namespace FolkClothesShop.Services.Data
                 .ToArrayAsync();
             return allCategories;
         }
+
+        public async Task<bool> ExistingByIdAsync(int id)
+        {
+            bool result = await this.dbContext.Categories
+                 .AnyAsync(c => c.Id == id);
+            return result;
+        }
     }
 }

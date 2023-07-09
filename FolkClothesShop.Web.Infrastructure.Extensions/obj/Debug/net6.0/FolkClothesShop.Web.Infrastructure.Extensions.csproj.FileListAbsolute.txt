@@ -1,0 +1,17 @@
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\Cosmos.CRTCompat.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\msvcp140.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\vcruntime140.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\vcruntime140_1.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.deps.json
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\bin\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.csproj.AssemblyReference.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.AssemblyInfoInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.AssemblyInfo.cs
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.csproj.CoreCompileInputs.cache
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\refint\FolkClothesShop.Web.Infrastructure.Extensions.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.Infrastructure.Extensions\obj\Debug\net6.0\ref\FolkClothesShop.Web.Infrastructure.Extensions.dll

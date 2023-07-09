@@ -10,5 +10,6 @@ namespace FolkClothesShop.Services.Data.Interfaces
     public interface ICategoryService
     {
         Task<IEnumerable<ProductSelectViewModel>> AllCategoriesAsync();
+        Task<bool> ExistingByIdAsync(int id);
     }
 }

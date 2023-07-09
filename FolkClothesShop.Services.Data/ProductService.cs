@@ -1,8 +1,10 @@
 ﻿
 
 using FolkClothesShop.Data;
+using FolkClothesShop.Data.Entity;
 using FolkClothesShop.Services.Data.Interfaces;
 using FolkClothesShop.Web.ViewModel.Home;
+using FolkClothesShop.Web.ViewModel.Product;
 using Microsoft.EntityFrameworkCore;
 
 namespace FolkClothesShop.Services.Data
@@ -29,6 +31,21 @@ namespace FolkClothesShop.Services.Data
                 .ToArrayAsync();
 
             return allProducts;
+        }
+
+        public async Task CreateAsync(ProductFormModel formModel,string adminId)
+        {
+            Product newProduct = new Product()
+            {
+                Title = formModel.Title,
+                ImageUrl = formModel.ImageUrl,
+                Description = formModel.Description,
+                Price = formModel.Price,
+                CategoryId = formModel.CategoryId,
+                AdminId = int.Parse(adminId)
+            };
+            await dbContext.Products.AddAsync(newProduct);
+            await dbContext.SaveChangesAsync();
         }
     }
 }
