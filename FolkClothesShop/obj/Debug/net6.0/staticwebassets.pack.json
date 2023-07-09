@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop\\wwwroot\\js\\jquery-override.js",
+      "PackagePath": "staticwebassets\\js\\jquery-override.js"
+    },
+    {
       "Id": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
