@@ -20,6 +20,7 @@ namespace FolkClothesShop.Data.Entity
 		public string ImageUrl { get; set; } = null!;
 		[Required]
 		public decimal Price { get; set; }
+		public bool IsActive { get; set; }
 		[Required]
 		public int CategoryId { get; set; }
 		public Category Category { get; set; } = null!;

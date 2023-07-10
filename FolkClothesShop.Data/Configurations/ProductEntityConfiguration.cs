@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace FolkClothesShop.Data.Configurations
 {
-    internal class ProductEntityConfiguration : IEntityTypeConfiguration<Product>
+    public class ProductEntityConfiguration : IEntityTypeConfiguration<Product>
     {
         public void Configure(EntityTypeBuilder<Product> modelBuilder)
         {
@@ -20,7 +20,9 @@ namespace FolkClothesShop.Data.Configurations
                   .WithMany(p => p.Products)
                   .HasForeignKey(ci => ci.CategoryId)
                   .OnDelete(DeleteBehavior.Restrict);
-
+            modelBuilder
+                .Property(p => p.IsActive)
+                .HasDefaultValue(true);
             modelBuilder
                 .HasOne(a => a.Admin)
                 .WithMany()
