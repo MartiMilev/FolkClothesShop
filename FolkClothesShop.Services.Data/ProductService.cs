@@ -97,5 +97,28 @@ namespace FolkClothesShop.Services.Data
 			await dbContext.Products.AddAsync(newProduct);
 			await dbContext.SaveChangesAsync();
 		}
+
+		public async Task<ProductDetailsViewModel?> GetByIdDetailsAsync(string productId)
+		{
+			Product? product = 
+				await this.dbContext
+				.Products
+				.FirstOrDefaultAsync(p => p.Id.ToString() == productId);
+			if(product == null)
+			{
+				return null;
+			}
+
+			return new ProductDetailsViewModel()
+			{
+				Id= product.Id,
+				Title = product.Title,
+				ImageUrl = product.ImageUrl,
+				Description = product.Description,
+				Price = product.Price,
+
+			};
+		}
+		
 	}
 }

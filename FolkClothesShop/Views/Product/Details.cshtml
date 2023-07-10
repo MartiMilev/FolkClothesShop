@@ -1,0 +1,42 @@
+﻿@model ProductDetailsViewModel
+@{
+	ViewBag.Title = "Детайли";
+}
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+<div class="container" style="display:inline">
+	<div class="row">
+		<div class="col-4">
+			<img class="card-img-top" style="width: 20rem;"
+				 src="@Model.ImageUrl" alt="Product Image">
+		</div>
+		<div class="card col-8 border-0">
+			<p style="font-size:25px;"><u>@Model.Title</u></p>
+			<p>Име: <b>@Model.Title</b></p>
+			<p>
+				Цена
+				<b>@String.Format("{0:f2}", Model.Price) BGN</b>
+			</p>
+			<p>@Model.Description</p>
+			<p>Категория <b>@Model.Category</b></p>
+			<div class="form-inline">
+				@if (this.User.Identity.IsAuthenticated)
+				{
+					<a class="btn btn-warning" asp-controller="Product" aspaction="Edit"
+				   asp-route-id="@Model.Id">Edit</a>
+					<a class="ml-2 btn btn-danger" asp-controller="Product" aspaction="Delete"
+				   asp-route-id="@Model.Id">Delete</a>
+					
+						<form class="ml-2" asp-controller="Product"
+					  asp-action="Buy" asp-route-id="@Model.Id"
+					  method="post">
+							<input class="btn btn-primary" type="submit"
+						   value="Купи" />
+						</form>
+					
+				}
+			</div>
+			<p></p>
+		</div>
+	</div>
+</div>

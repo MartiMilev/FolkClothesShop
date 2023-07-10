@@ -14,5 +14,6 @@ namespace FolkClothesShop.Services.Data.Interfaces
         Task<IEnumerable<IndexViewModel>>AllProductsAsync();
         Task CreateAsync(ProductFormModel formModel, string adminId);
         Task<AllProductFilteredAndPagedServiceModel> AllAsync(AllProductsQueryModel queryModel);
+        Task<ProductDetailsViewModel?> GetByIdDetailsAsync(string productId);
     }
 }

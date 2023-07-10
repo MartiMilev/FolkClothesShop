@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XwDPvpOcq9KBrv773Az1keinaQj7KwBe3BT4LkpiM/a4vF7MRZiM8VNJxQEO23RMayHXBIoLFKODmkzD/UPaAw==",
+  "dgSpecHash": "MJL5ZS2BHhC3KhCWUUrviYBZGuEDZqO/RVVwED7rlukhPQdCSR8ka4LauXOmHyNCFRzL1RMqX3xGwb5og2+Scg==",
   "success": true,
   "projectFilePath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop\\FolkClothesShop.csproj",
   "expectedPackageFiles": [
@@ -238,7 +238,9 @@
     "C:\\Users\\acer\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\acer\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\acer\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\xunit.extensibility.core\\2.5.0\\xunit.extensibility.core.2.5.0.nupkg.sha512"
   ],
   "logs": []
 }

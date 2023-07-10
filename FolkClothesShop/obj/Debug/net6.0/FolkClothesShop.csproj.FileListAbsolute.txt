@@ -287,3 +287,5 @@ D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Web.Infrastructure.Extensions.pdb
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Services.Data.Model.dll
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\FolkClothesShop.Services.Data.Model.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\xunit.abstractions.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop\bin\Debug\net6.0\xunit.core.dll

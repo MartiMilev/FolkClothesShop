@@ -25,6 +25,7 @@ namespace FolkClothesShop.Data.Entity
 		public int CategoryId { get; set; }
 		public Category Category { get; set; } = null!;
 		public int AdminId { get; set; }
+		public int UserId { get; set; }
 		public Admin Admin { get; set; } = null!;
 	}
 }
