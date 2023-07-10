@@ -11776,6 +11776,7 @@
       "FolkClothesShop.Data >= 1.0.0",
       "FolkClothesShop.Data.Models >= 1.0.0",
       "FolkClothesShop.Services.Data >= 1.0.0",
+      "FolkClothesShop.Services.Data.Model >= 1.0.0",
       "FolkClothesShop.Web.Infrastructure >= 1.0.0",
       "FolkClothesShop.Web.Infrastructure.Extensions >= 1.0.0",
       "FolkClothesShop.Web.ViewModel >= 1.0.0",
@@ -11819,6 +11820,9 @@
             },
             "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj": {
               "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\FolkClothesShop.Data.csproj"
+            },
+            "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data.Model\\FolkClothesShop.Services.Data.Model.csproj": {
+              "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data.Model\\FolkClothesShop.Services.Data.Model.csproj"
             },
             "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj": {
               "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Services.Data\\FolkClothesShop.Services.Data.csproj"

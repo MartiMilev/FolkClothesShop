@@ -11,5 +11,6 @@ namespace FolkClothesShop.Services.Data.Interfaces
     {
         Task<IEnumerable<ProductSelectViewModel>> AllCategoriesAsync();
         Task<bool> ExistingByIdAsync(int id);
+        Task<IEnumerable<string>> AllCategoryNamesAsync();
     }
 }

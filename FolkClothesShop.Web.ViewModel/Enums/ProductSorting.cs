@@ -8,10 +8,7 @@ namespace FolkClothesShop.Web.ViewModel.Enum
 {
     public enum ProductSorting
     {
-        Newest = 0,
-        Oldest =1,
-        PriceAscending = 2,
-        PriceDescending = 3,
-
+        PriceAscending = 0,
+        PriceDescending = 1,
     }
 }

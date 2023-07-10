@@ -1,4 +1,5 @@
-﻿using FolkClothesShop.Web.ViewModel.Home;
+﻿using FolkClothesShop.Services.Data.Model.Product;
+using FolkClothesShop.Web.ViewModel.Home;
 using FolkClothesShop.Web.ViewModel.Product;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,6 @@ namespace FolkClothesShop.Services.Data.Interfaces
     {
         Task<IEnumerable<IndexViewModel>>AllProductsAsync();
         Task CreateAsync(ProductFormModel formModel, string adminId);
+        Task<AllProductFilteredAndPagedServiceModel> AllAsync(AllProductsQueryModel queryModel);
     }
 }

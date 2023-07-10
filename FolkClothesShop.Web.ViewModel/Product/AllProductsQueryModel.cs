@@ -19,7 +19,7 @@ namespace FolkClothesShop.Web.ViewModel.Product
         }
         public string? Category { get; set; }
         [Display(Name = "Търси")]
-        public string? SerarchString { get; set; }
+        public string? SearchString { get; set; }
         [Display(Name = "Филтри")]
         public ProductSorting ProductSorting { get; set; }
         public int CurrentPage { get; set; }
