@@ -28,7 +28,6 @@ namespace FolkClothesShop.Web.ViewModel.Product
         [Required]
         [Display(Name ="Снимка")]
         public string ImageUrl { get; set; } = null!;
-        [Display(Name ="Категория")]
         public int CategoryId { get; set; }
         public IEnumerable<ProductSelectViewModel> Categories { get; set; }
     }

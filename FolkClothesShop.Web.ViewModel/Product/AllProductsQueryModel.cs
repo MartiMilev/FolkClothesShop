@@ -17,6 +17,7 @@ namespace FolkClothesShop.Web.ViewModel.Product
             this.Categories = new HashSet<string>();
             this.Products = new HashSet<ProductAllViewModel>();
         }
+		[Display(Name = "Категории")]
         public string? Category { get; set; }
         [Display(Name = "Търси")]
         public string? SearchString { get; set; }
@@ -25,7 +26,7 @@ namespace FolkClothesShop.Web.ViewModel.Product
         public int CurrentPage { get; set; }
         public int TotalProducts { get; set; }
         public int ProductPerPage { get; set; }
-        public IEnumerable<string> Categories { get; set; }
+		public IEnumerable<string> Categories { get; set; }
         public IEnumerable<ProductAllViewModel> Products { get; set; }
     }
 }
