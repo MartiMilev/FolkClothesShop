@@ -52,7 +52,7 @@ namespace FolkClothesShop.Services.Data
 			.Take(queryModel.ProductPerPage)
 			.Select(p => new ProductAllViewModel()
 			{
-				Id = p.Id,
+				Id = p.Id.ToString(),
 				Title = p.Title,
 				Description = p.Description,
 				ImageUrl = p.ImageUrl,
@@ -103,6 +103,7 @@ namespace FolkClothesShop.Services.Data
 			Product? product = 
 				await this.dbContext
 				.Products
+				.Include(p=>p.Category)
 				.FirstOrDefaultAsync(p => p.Id.ToString() == productId);
 			if(product == null)
 			{
@@ -111,12 +112,12 @@ namespace FolkClothesShop.Services.Data
 
 			return new ProductDetailsViewModel()
 			{
-				Id= product.Id,
+				Id= product.Id.ToString(),
 				Title = product.Title,
 				ImageUrl = product.ImageUrl,
 				Description = product.Description,
 				Price = product.Price,
-
+				Category = product.Category.Name,
 			};
 		}
 		

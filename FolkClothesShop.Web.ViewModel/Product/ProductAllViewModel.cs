@@ -10,7 +10,7 @@ namespace FolkClothesShop.Web.ViewModel.Product
 {
     public class ProductAllViewModel
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         [Display(Name = "Име")]
         public string Title { get; set; } = null!;
         [Display(Name = "Описание")]
