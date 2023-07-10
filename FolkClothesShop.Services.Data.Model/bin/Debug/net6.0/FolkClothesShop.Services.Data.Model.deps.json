@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FolkClothesShop.Services.Data.Model/1.0.0": {
+        "dependencies": {
+          "FolkClothesShop.Web.ViewModel": "1.0.0"
+        },
+        "runtime": {
+          "FolkClothesShop.Services.Data.Model.dll": {}
+        }
+      },
+      "FolkClothesShop.Web.ViewModel/1.0.0": {
+        "runtime": {
+          "FolkClothesShop.Web.ViewModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FolkClothesShop.Services.Data.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FolkClothesShop.Web.ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

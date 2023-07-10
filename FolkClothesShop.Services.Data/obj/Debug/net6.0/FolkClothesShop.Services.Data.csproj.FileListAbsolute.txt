@@ -15,3 +15,7 @@ D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\ob
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\refint\FolkClothesShop.Services.Data.dll
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\FolkClothesShop.Services.Data.pdb
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\obj\Debug\net6.0\ref\FolkClothesShop.Services.Data.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Data.Models.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Services.Data.Model.dll
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Data.Models.pdb
+D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Services.Data\bin\Debug\net6.0\FolkClothesShop.Services.Data.Model.pdb

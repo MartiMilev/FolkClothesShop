@@ -6,7 +6,7 @@ namespace FolkClothesShop.Web.Infrastructure.Extensions.ModelBinders
     public class DecimalModelBinder : IModelBinder
     {
 
-        public Task BindModelAsync(ModelBindingContext? bindingContext)
+       public Task BindModelAsync(ModelBindingContext? bindingContext)
         {
             if (bindingContext == null)
             {
@@ -40,8 +40,8 @@ namespace FolkClothesShop.Web.Infrastructure.Extensions.ModelBinders
                 {
                     bindingContext.Result = ModelBindingResult.Success(parsedValue);
                 }
-                return Task.CompletedTask;
             }
+                return Task.CompletedTask;
         }
     }
 }
