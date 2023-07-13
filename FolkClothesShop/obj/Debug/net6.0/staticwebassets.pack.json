@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\FolkClothesShop.bundle.scp.css"
     },
     {
+      "Id": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop\\wwwroot\\Bootstrap ecommerce.css",
+      "PackagePath": "staticwebassets\\Bootstrap ecommerce.css"
+    },
+    {
       "Id": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
