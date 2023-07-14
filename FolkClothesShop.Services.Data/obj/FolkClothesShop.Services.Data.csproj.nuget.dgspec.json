@@ -8,10 +8,10 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj",
-        "projectName": "FolkClothesShop.Data",
+        "projectName": "FolkClothesShop.Data.Models",
         "projectPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\FolkClothesShop.Data.Models.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data\\obj\\",
+        "outputPath": "D:\\source\\repos\\ASP.NET\\Project\\FolkClothesShop\\FolkClothesShop.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

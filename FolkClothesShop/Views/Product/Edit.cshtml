@@ -1,0 +1,12 @@
+﻿@model ProductFormModel
+@{
+	ViewData["Title"] = "Редактирай продукт";
+}
+<h2 class="text-center">@ViewData["Title"]</h2>
+<hr/>
+<partial name="ProductFormPartial" model="@Model"/>
+
+@section Scripts
+{
+	<partial name="_ValidationScriptsPartial"/>
+}

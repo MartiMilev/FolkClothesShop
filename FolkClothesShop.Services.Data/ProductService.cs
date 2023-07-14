@@ -98,6 +98,23 @@ namespace FolkClothesShop.Services.Data
 			await dbContext.SaveChangesAsync();
 		}
 
+		public async Task EditProductByIdAndFormModel(string productId, ProductFormModel formModel)
+		{
+			Product product =await this.dbContext
+				.Products
+				.Where(p => p.IsActive)
+				.FirstAsync(p => p.Id.ToString() == productId);
+
+			product.Title = formModel.Title;
+			product.ImageUrl = formModel.ImageUrl;
+			product.Price = formModel.Price;
+			product.Description = formModel.Description;
+			product.CategoryId = formModel.CategoryId;
+
+
+			await dbContext.SaveChangesAsync();
+		}
+
 		public async Task<bool> ExistByIdAsync(string productId)
 		{
 			bool result =await this.dbContext.Products

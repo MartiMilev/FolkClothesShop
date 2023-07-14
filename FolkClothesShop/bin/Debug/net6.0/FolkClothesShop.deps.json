@@ -9,6 +9,7 @@
       "FolkClothesShop/1.0.0": {
         "dependencies": {
           "FolkClothesShop.Data": "1.0.0",
+          "FolkClothesShop.Data.Models": "1.0.0",
           "FolkClothesShop.Services.Data": "1.0.0",
           "FolkClothesShop.Services.Data.Model": "1.0.0",
           "FolkClothesShop.Web.Infrastructure": "1.0.0",
@@ -2729,9 +2730,15 @@
           "FolkClothesShop.Data.dll": {}
         }
       },
+      "FolkClothesShop.Data.Models/1.0.0": {
+        "runtime": {
+          "FolkClothesShop.Data.Models.dll": {}
+        }
+      },
       "FolkClothesShop.Services.Data/1.0.0": {
         "dependencies": {
           "FolkClothesShop.Data": "1.0.0",
+          "FolkClothesShop.Data.Models": "1.0.0",
           "FolkClothesShop.Services.Data.Model": "1.0.0",
           "FolkClothesShop.Web.ViewModel": "1.0.0"
         },
@@ -4438,6 +4445,11 @@
       "hashPath": "xunit.extensibility.core.2.5.0.nupkg.sha512"
     },
     "FolkClothesShop.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FolkClothesShop.Data.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

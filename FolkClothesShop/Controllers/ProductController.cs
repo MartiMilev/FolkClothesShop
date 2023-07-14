@@ -93,7 +93,21 @@ namespace FolkClothesShop.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Edit(string id)
 		{
+			bool productExists = await this.productService
+				.ExistByIdAsync(id);
+			if (!productExists)
+			{
+				return this.RedirectToAction("All", "Product");
 
+			}
+			ProductDetailsViewModel viewModel = await this.productService
+				.GetByIdDetailsAsync(id);
+
+			
+			ProductFormModel formModel = await this.productService
+				.GetProductForEditByIdAsync(id);
+			formModel.Categories = await this.categoryService.AllCategoriesAsync();
+			return this.View(formModel);
 		}
 
 		[HttpGet]
@@ -105,6 +119,28 @@ namespace FolkClothesShop.Controllers
 			return View(Cart);
 			string? userId = this.User.GetId();
 
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Edit(string id, ProductFormModel model)
+		{
+			if(!ModelState.IsValid)
+			{
+				model.Categories=await this.categoryService.AllCategoriesAsync();
+
+				return this.View(model);
+			}
+			try
+			{
+				await this.productService.EditProductByIdAndFormModel(id, model);
+			}
+			catch (Exception)
+			{
+				this.ModelState.AddModelError(string.Empty, "Unexpected error occurred while trying to update the product.");
+				model.Categories=await this.categoryService.AllCategoriesAsync();
+				return this.View(model);
+			}
+			return this.RedirectToAction("Details", "Product", new { id });
 		}
 	}
 }
