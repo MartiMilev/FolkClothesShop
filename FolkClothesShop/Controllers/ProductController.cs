@@ -78,13 +78,22 @@ namespace FolkClothesShop.Controllers
 		[AllowAnonymous]
 		public async Task<IActionResult> Details(string id)
 		{
-			ProductDetailsViewModel? viewModel = await this.productService
-				.GetByIdDetailsAsync(id);
-			if (viewModel == null)
+			bool productExists = await this.productService
+				.ExistByIdAsync(id);
+			if(!productExists)
 			{
 				return this.RedirectToAction("All", "Product");
+
 			}
+			ProductDetailsViewModel viewModel = await this.productService
+				.GetByIdDetailsAsync(id);
+			
 			return View(viewModel);
+		}
+		[HttpGet]
+		public async Task<IActionResult> Edit(string id)
+		{
+
 		}
 
 		[HttpGet]

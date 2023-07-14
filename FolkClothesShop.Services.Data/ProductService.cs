@@ -98,13 +98,21 @@ namespace FolkClothesShop.Services.Data
 			await dbContext.SaveChangesAsync();
 		}
 
-		public async Task<ProductDetailsViewModel?> GetByIdDetailsAsync(string productId)
+		public async Task<bool> ExistByIdAsync(string productId)
+		{
+			bool result =await this.dbContext.Products
+				.AnyAsync(p => p.Id.ToString() == productId);
+			return result;
+		}
+
+		public async Task<ProductDetailsViewModel> GetByIdDetailsAsync(string productId)
 		{
 			Product? product = 
 				await this.dbContext
 				.Products
 				.Include(p=>p.Category)
-				.FirstOrDefaultAsync(p => p.Id.ToString() == productId);
+				.Where(p => p.IsActive)
+				.FirstAsync(p => p.Id.ToString() == productId);
 			if(product == null)
 			{
 				return null;
@@ -120,6 +128,25 @@ namespace FolkClothesShop.Services.Data
 				Category = product.Category.Name,
 			};
 		}
-		
+
+		public async Task<ProductFormModel> GetProductForEditByIdAsync(string productId)
+		{
+			Product product = await dbContext
+				.Products
+				.Include(p=>p.Category)
+				.Where(p=>p.IsActive)
+				.FirstAsync(p=>p.Id.ToString() == productId);
+
+			return new ProductFormModel
+			{
+				Title = product.Title,
+				ImageUrl = product.ImageUrl,
+				Description = product.Description,
+				Price = product.Price,
+				CategoryId = product.CategoryId,
+			};
+			await dbContext.Products.AddAsync(product);
+			await dbContext.SaveChangesAsync();
+		}
 	}
 }
