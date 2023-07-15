@@ -80,14 +80,14 @@ namespace FolkClothesShop.Controllers
 		{
 			bool productExists = await this.productService
 				.ExistByIdAsync(id);
-			if(!productExists)
+			if (!productExists)
 			{
 				return this.RedirectToAction("All", "Product");
 
 			}
 			ProductDetailsViewModel viewModel = await this.productService
 				.GetByIdDetailsAsync(id);
-			
+
 			return View(viewModel);
 		}
 		[HttpGet]
@@ -98,12 +98,12 @@ namespace FolkClothesShop.Controllers
 			if (!productExists)
 			{
 				return this.RedirectToAction("All", "Product");
-
 			}
+
 			ProductDetailsViewModel viewModel = await this.productService
 				.GetByIdDetailsAsync(id);
 
-			
+
 			ProductFormModel formModel = await this.productService
 				.GetProductForEditByIdAsync(id);
 			formModel.Categories = await this.categoryService.AllCategoriesAsync();
@@ -120,24 +120,48 @@ namespace FolkClothesShop.Controllers
 			string? userId = this.User.GetId();
 
 		}
+		[HttpGet]
+		public async Task<IActionResult> Delete(int id)
+		{
+			bool productExists = await this.productService
+				.ExistByIdAsync(id.ToString());
+			//if (!productExists)
+			//{
+			//	return this.RedirectToAction("All", "Product");
+			//}
 
+			try
+			{
+				ProductPreDeleteDetailsViewModel viewModel =
+				await this.productService.GetProductForDeleteByIdAsync(id.ToString());
+
+				return View(viewModel);
+			}
+
+			catch (Exception)
+			{
+
+				throw;
+			}
+			
+		}
 		[HttpPost]
 		public async Task<IActionResult> Edit(string id, ProductFormModel model)
 		{
-			if(!ModelState.IsValid)
+			if (!ModelState.IsValid)
 			{
-				model.Categories=await this.categoryService.AllCategoriesAsync();
+				model.Categories = await this.categoryService.AllCategoriesAsync();
 
 				return this.View(model);
 			}
 			try
 			{
-				await this.productService.EditProductByIdAndFormModel(id, model);
+				await this.productService.EditProductByIdAndFormModelAsync(id, model);
 			}
 			catch (Exception)
 			{
 				this.ModelState.AddModelError(string.Empty, "Unexpected error occurred while trying to update the product.");
-				model.Categories=await this.categoryService.AllCategoriesAsync();
+				model.Categories = await this.categoryService.AllCategoriesAsync();
 				return this.View(model);
 			}
 			return this.RedirectToAction("Details", "Product", new { id });

@@ -98,9 +98,9 @@ namespace FolkClothesShop.Services.Data
 			await dbContext.SaveChangesAsync();
 		}
 
-		public async Task EditProductByIdAndFormModel(string productId, ProductFormModel formModel)
+		public async Task EditProductByIdAndFormModelAsync(string productId, ProductFormModel formModel)
 		{
-			Product product =await this.dbContext
+			Product product = await this.dbContext
 				.Products
 				.Where(p => p.IsActive)
 				.FirstAsync(p => p.Id.ToString() == productId);
@@ -117,27 +117,27 @@ namespace FolkClothesShop.Services.Data
 
 		public async Task<bool> ExistByIdAsync(string productId)
 		{
-			bool result =await this.dbContext.Products
+			bool result = await this.dbContext.Products
 				.AnyAsync(p => p.Id.ToString() == productId);
 			return result;
 		}
 
 		public async Task<ProductDetailsViewModel> GetByIdDetailsAsync(string productId)
 		{
-			Product? product = 
+			Product? product =
 				await this.dbContext
 				.Products
-				.Include(p=>p.Category)
+				.Include(p => p.Category)
 				.Where(p => p.IsActive)
 				.FirstAsync(p => p.Id.ToString() == productId);
-			if(product == null)
+			if (product == null)
 			{
 				return null;
 			}
 
 			return new ProductDetailsViewModel()
 			{
-				Id= product.Id.ToString(),
+				Id = product.Id.ToString(),
 				Title = product.Title,
 				ImageUrl = product.ImageUrl,
 				Description = product.Description,
@@ -146,13 +146,27 @@ namespace FolkClothesShop.Services.Data
 			};
 		}
 
+		public async Task<ProductPreDeleteDetailsViewModel> GetProductForDeleteByIdAsync(string productId)
+		{
+			Product product = await this.dbContext
+				.Products
+				.FirstAsync(p => p.Id.ToString() == productId);
+
+			return new ProductPreDeleteDetailsViewModel
+			{
+				Title= product.Title,
+				Description = product.Description,
+				ImageUrl=product.ImageUrl
+			};
+		}
+
 		public async Task<ProductFormModel> GetProductForEditByIdAsync(string productId)
 		{
 			Product product = await dbContext
 				.Products
-				.Include(p=>p.Category)
-				.Where(p=>p.IsActive)
-				.FirstAsync(p=>p.Id.ToString() == productId);
+				.Include(p => p.Category)
+				.Where(p => p.IsActive)
+				.FirstAsync(p => p.Id.ToString() == productId);
 
 			return new ProductFormModel
 			{
@@ -165,5 +179,6 @@ namespace FolkClothesShop.Services.Data
 			await dbContext.Products.AddAsync(product);
 			await dbContext.SaveChangesAsync();
 		}
+
 	}
 }
