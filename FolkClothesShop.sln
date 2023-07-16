@@ -15,15 +15,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Data.Models
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2A5FBB82-27B0-48DE-AF2E-C54DF365049A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Services.Data", "FolkClothesShop.Services.Data\FolkClothesShop.Services.Data.csproj", "{F4E56A18-CE37-4F70-A594-0204A8F61831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Services.Data", "FolkClothesShop.Services.Data\FolkClothesShop.Services.Data.csproj", "{F4E56A18-CE37-4F70-A594-0204A8F61831}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Web.ViewModel", "FolkClothesShop.Web.ViewModel\FolkClothesShop.Web.ViewModel.csproj", "{5D07787D-0F5F-4ED1-8162-EE1FE09E7A56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Web.ViewModel", "FolkClothesShop.Web.ViewModel\FolkClothesShop.Web.ViewModel.csproj", "{5D07787D-0F5F-4ED1-8162-EE1FE09E7A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Web.Infrastructure", "FolkClothesShop.Web.Infrastructure\FolkClothesShop.Web.Infrastructure.csproj", "{22384ED0-68A4-40C2-ADC4-88665A37BEBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Web.Infrastructure", "FolkClothesShop.Web.Infrastructure\FolkClothesShop.Web.Infrastructure.csproj", "{22384ED0-68A4-40C2-ADC4-88665A37BEBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Web.Infrastructure.Extensions", "FolkClothesShop.Web.Infrastructure.Extensions\FolkClothesShop.Web.Infrastructure.Extensions.csproj", "{7BDF8275-BCD1-4415-A825-6A9CBCF4A89E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Web.Infrastructure.Extensions", "FolkClothesShop.Web.Infrastructure.Extensions\FolkClothesShop.Web.Infrastructure.Extensions.csproj", "{7BDF8275-BCD1-4415-A825-6A9CBCF4A89E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Services.Data.Model", "FolkClothesShop.Services.Data.Model\FolkClothesShop.Services.Data.Model.csproj", "{AB93500C-38CF-487E-B739-3F77B5FE20F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Services.Data.Model", "FolkClothesShop.Services.Data.Model\FolkClothesShop.Services.Data.Model.csproj", "{AB93500C-38CF-487E-B739-3F77B5FE20F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ADDEF913-F1FE-46AC-B185-87CABA0CA86B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FolkClothesShop.Infrastructure", "FolkClothesShop.Infrastructure", "{FB612118-9FC6-4611-A392-98886774AF96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6F263D10-1848-476A-9B89-D092279D845C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FolkClothesShop.Data.Tests", "FolkClothesShop.Data.Tests", "{29829DE8-39E5-48DC-9594-3E863B9CCB4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FolkClothesShop.Services.Tests", "FolkClothesShop.Services.Tests", "{ACD6B754-901F-46A9-9852-48AC877AC05A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Data.Tests", "FolkClothesShop.Data.Tests.csproj\FolkClothesShop.Data.Tests.csproj", "{5BD48277-CD47-4EB0-A7E1-77FC68F69107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolkClothesShop.Services.Tests", "FolkClothesShop.Services.Tests.csproj\FolkClothesShop.Services.Tests.csproj", "{2992FE06-B8E6-47A0-B493-FE8889FBD700}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,17 +77,35 @@ Global
 		{AB93500C-38CF-487E-B739-3F77B5FE20F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB93500C-38CF-487E-B739-3F77B5FE20F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB93500C-38CF-487E-B739-3F77B5FE20F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD48277-CD47-4EB0-A7E1-77FC68F69107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD48277-CD47-4EB0-A7E1-77FC68F69107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD48277-CD47-4EB0-A7E1-77FC68F69107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD48277-CD47-4EB0-A7E1-77FC68F69107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2992FE06-B8E6-47A0-B493-FE8889FBD700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2992FE06-B8E6-47A0-B493-FE8889FBD700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2992FE06-B8E6-47A0-B493-FE8889FBD700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2992FE06-B8E6-47A0-B493-FE8889FBD700}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0B1FE3B0-E0CA-481E-9514-5536EBA6797E} = {370FBDE8-FF78-447D-A4AA-75C7E321D266}
+		{370FBDE8-FF78-447D-A4AA-75C7E321D266} = {ADDEF913-F1FE-46AC-B185-87CABA0CA86B}
+		{94328C38-0A8E-49BE-8639-137742D8E6DA} = {ADDEF913-F1FE-46AC-B185-87CABA0CA86B}
 		{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B} = {94328C38-0A8E-49BE-8639-137742D8E6DA}
 		{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D} = {94328C38-0A8E-49BE-8639-137742D8E6DA}
+		{2A5FBB82-27B0-48DE-AF2E-C54DF365049A} = {ADDEF913-F1FE-46AC-B185-87CABA0CA86B}
 		{F4E56A18-CE37-4F70-A594-0204A8F61831} = {2A5FBB82-27B0-48DE-AF2E-C54DF365049A}
-		{22384ED0-68A4-40C2-ADC4-88665A37BEBC} = {370FBDE8-FF78-447D-A4AA-75C7E321D266}
+		{5D07787D-0F5F-4ED1-8162-EE1FE09E7A56} = {ADDEF913-F1FE-46AC-B185-87CABA0CA86B}
+		{22384ED0-68A4-40C2-ADC4-88665A37BEBC} = {FB612118-9FC6-4611-A392-98886774AF96}
+		{7BDF8275-BCD1-4415-A825-6A9CBCF4A89E} = {FB612118-9FC6-4611-A392-98886774AF96}
 		{AB93500C-38CF-487E-B739-3F77B5FE20F5} = {2A5FBB82-27B0-48DE-AF2E-C54DF365049A}
+		{FB612118-9FC6-4611-A392-98886774AF96} = {ADDEF913-F1FE-46AC-B185-87CABA0CA86B}
+		{29829DE8-39E5-48DC-9594-3E863B9CCB4F} = {6F263D10-1848-476A-9B89-D092279D845C}
+		{ACD6B754-901F-46A9-9852-48AC877AC05A} = {6F263D10-1848-476A-9B89-D092279D845C}
+		{5BD48277-CD47-4EB0-A7E1-77FC68F69107} = {29829DE8-39E5-48DC-9594-3E863B9CCB4F}
+		{2992FE06-B8E6-47A0-B493-FE8889FBD700} = {ACD6B754-901F-46A9-9852-48AC877AC05A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0A54DA7-E72C-4E21-8EE8-65A5F8453AD1}

@@ -123,13 +123,10 @@ namespace FolkClothesShop.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Delete(int id)
 		{
-			bool productExists = await this.productService
-				.ExistByIdAsync(id.ToString());
-			//if (!productExists)
-			//{
-			//	return this.RedirectToAction("All", "Product");
-			//}
-
+			if(await productService.ExistByIdAsync(id.ToString())==false)
+			{
+				return BadRequest();
+			}
 			try
 			{
 				ProductPreDeleteDetailsViewModel viewModel =
