@@ -19,5 +19,6 @@ namespace FolkClothesShop.Services.Data.Interfaces
         Task<ProductFormModel> GetProductForEditByIdAsync(string productId);
         Task EditProductByIdAndFormModelAsync(string productId, ProductFormModel formModel);
         Task<ProductPreDeleteDetailsViewModel> GetProductForDeleteByIdAsync(string productId);
+        Task DeleteProductByIdAsync(string productId);
     }
 }

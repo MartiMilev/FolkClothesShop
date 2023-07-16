@@ -121,16 +121,18 @@ namespace FolkClothesShop.Controllers
 
 		}
 		[HttpGet]
-		public async Task<IActionResult> Delete(int id)
+		public async Task<IActionResult> Delete(string id)
 		{
-			if(await productService.ExistByIdAsync(id.ToString())==false)
+			bool productExists = await this.productService
+				.ExistByIdAsync(id);
+			if (!productExists)
 			{
-				return BadRequest();
+				return this.RedirectToAction("All", "Product");
 			}
 			try
 			{
 				ProductPreDeleteDetailsViewModel viewModel =
-				await this.productService.GetProductForDeleteByIdAsync(id.ToString());
+				await this.productService.GetProductForDeleteByIdAsync(id);
 
 				return View(viewModel);
 			}
@@ -141,6 +143,27 @@ namespace FolkClothesShop.Controllers
 				throw;
 			}
 			
+		}
+		[HttpPost]
+		public async Task<IActionResult> Delete(string id , ProductPreDeleteDetailsViewModel viewModel)
+		{
+			bool productExists = await this.productService
+				.ExistByIdAsync(id);
+			if (!productExists)
+			{
+				return this.RedirectToAction("All", "Product");
+			}
+			try
+			{
+				await this.productService.DeleteProductByIdAsync(id);
+
+				return this.RedirectToAction("All","Product");
+			}
+			catch (Exception)
+			{
+
+				throw;
+			}
 		}
 		[HttpPost]
 		public async Task<IActionResult> Edit(string id, ProductFormModel model)

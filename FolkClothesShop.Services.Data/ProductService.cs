@@ -98,6 +98,15 @@ namespace FolkClothesShop.Services.Data
 			await dbContext.SaveChangesAsync();
 		}
 
+		public async Task DeleteProductByIdAsync(string productId)
+		{
+			Product productToDelete =await this.dbContext.Products.Where(p=>p.IsActive)
+				.FirstAsync(p=>p.Id.ToString()==productId);
+
+			productToDelete.IsActive = false;
+			await dbContext.SaveChangesAsync();
+		}
+
 		public async Task EditProductByIdAndFormModelAsync(string productId, ProductFormModel formModel)
 		{
 			Product product = await this.dbContext
@@ -148,7 +157,7 @@ namespace FolkClothesShop.Services.Data
 
 		public async Task<ProductPreDeleteDetailsViewModel> GetProductForDeleteByIdAsync(string productId)
 		{
-			Product product = await this.dbContext
+			Product product = await dbContext
 				.Products
 				.FirstAsync(p => p.Id.ToString() == productId);
 

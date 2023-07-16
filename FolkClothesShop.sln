@@ -5,15 +5,15 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop", "FolkClothesShop\FolkClothesShop.csproj", "{0B1FE3B0-E0CA-481E-9514-5536EBA6797E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{370FBDE8-FF78-447D-A4AA-75C7E321D266}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FolkClothesShop.Web", "FolkClothesShop.Web", "{370FBDE8-FF78-447D-A4AA-75C7E321D266}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{94328C38-0A8E-49BE-8639-137742D8E6DA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FolkClothesShop.Data", "FolkClothesShop.Data", "{94328C38-0A8E-49BE-8639-137742D8E6DA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Data", "FolkClothesShop.Data\FolkClothesShop.Data.csproj", "{DF4C419F-BB9B-4F9A-9B57-1CBB25A3230B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Data.Models", "FolkClothesShop.Data.Models\FolkClothesShop.Data.Models.csproj", "{5AEAC218-2AEE-4D67-ABF3-D777A0DF274D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2A5FBB82-27B0-48DE-AF2E-C54DF365049A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FolkClothesShop.Services", "FolkClothesShop.Services", "{2A5FBB82-27B0-48DE-AF2E-C54DF365049A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolkClothesShop.Services.Data", "FolkClothesShop.Services.Data\FolkClothesShop.Services.Data.csproj", "{F4E56A18-CE37-4F70-A594-0204A8F61831}"
 EndProject
