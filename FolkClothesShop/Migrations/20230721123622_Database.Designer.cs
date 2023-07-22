@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FolkClothesShop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230703122221_TestMigration")]
-    partial class TestMigration
+    [Migration("20230721123622_Database")]
+    partial class Database
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,180 @@ namespace FolkClothesShop.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Admin", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Admins");
+                });
+
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Момче"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Момиче"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Аксесоари"
+                        });
+                });
+
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AdminId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AdminId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Най-хубавата носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/267074128_569156850818756_8705324827277707870_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3aF7k0tMHR8AX8rR1kC&_nc_ht=scontent.fsof8-1.fna&oh=00_AfDjjNWBjjVAlfUH-4pRZC4FNu6hqh8OJ0B_O9Pvs1oKbg&oe=64AB134F",
+                            IsActive = false,
+                            Price = 56.00m,
+                            Title = "Тракийска носия",
+                            UserId = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AdminId = 1,
+                            CategoryId = 2,
+                            Description = "Най-хубавата дамска носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/242844727_517782082622900_481886533923826782_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E6ONkspewXsAX8tTOFH&_nc_ht=scontent.fsof8-1.fna&oh=00_AfAaV-sf-iIaP9RBpFb30yEaGtMgZb1c555Ab7X_J_QCiQ&oe=64AB6E19",
+                            IsActive = false,
+                            Price = 78.00m,
+                            Title = "Тракийска носия",
+                            UserId = 0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AdminId = 1,
+                            CategoryId = 2,
+                            Description = "Най-хубавата носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t1.6435-9/146874580_353052245762552_3031650708666144962_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=GAZN-Vz7d_MAX9jfRNN&_nc_ht=scontent.fsof8-1.fna&oh=00_AfBbpeg0Sn4CV_eEvg9Qm3uXhNKS1n3lq0dvC2hH51iq5w&oe=64CE4CFA",
+                            IsActive = false,
+                            Price = 78.00m,
+                            Title = "Родопска носия",
+                            UserId = 0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Най-хубавата носия",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t1.6435-9/147282029_353052235762553_8637670463306638015_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=ZhdcZIAVKckAX975rw7&_nc_ht=scontent.fsof8-1.fna&oh=00_AfCRtPxohx0G0dWYR6Tr8GwXQXGsPykLAgAf3aVIm1n5Vw&oe=64CE37DE",
+                            IsActive = false,
+                            Price = 78.00m,
+                            Title = "Родопска носия",
+                            UserId = 0
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Потурчета за малките сладурчета",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/267565025_569157017485406_4196785183282386807_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pvEtN8UWiv8AX_lCcE1&_nc_ht=scontent.fsof8-1.fna&oh=00_AfAvwr7GlR7KJAS2ZNAdejCMCIoynczLWR3BnskeRT08Zg&oe=64ABE6FA",
+                            IsActive = false,
+                            Price = 12.00m,
+                            Title = "Потури",
+                            UserId = 0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AdminId = 1,
+                            CategoryId = 1,
+                            Description = "Калпак за малкия юнак",
+                            ImageUrl = "https://scontent.fsof8-1.fna.fbcdn.net/v/t39.30808-6/267325300_569156934152081_3269888927601348101_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pQqNHetzV8wAX_zd8wl&_nc_ht=scontent.fsof8-1.fna&oh=00_AfD2VPZM7skYf3oNZ3_hJ1oezTTDuDwg4XUmtXEkwa4EHg&oe=64ABF1DE",
+                            IsActive = false,
+                            Price = 11.00m,
+                            Title = "Калпак",
+                            UserId = 0
+                        });
+                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -226,6 +400,36 @@ namespace FolkClothesShop.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Admin", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Product", b =>
+                {
+                    b.HasOne("FolkClothesShop.Data.Entity.Admin", "Admin")
+                        .WithMany()
+                        .HasForeignKey("AdminId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("FolkClothesShop.Data.Entity.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Admin");
+
+                    b.Navigation("Category");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -275,6 +479,11 @@ namespace FolkClothesShop.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("FolkClothesShop.Data.Entity.Category", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }
