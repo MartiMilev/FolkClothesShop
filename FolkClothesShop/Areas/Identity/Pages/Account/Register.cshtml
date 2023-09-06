@@ -5,10 +5,7 @@
 	Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 <style>
-	body {
-		background-image: url('https://scontent.fsof8-1.fna.fbcdn.net/v/t31.18172-8/26173369_10155994672033711_6116726213032214097_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=cTWl5-dX95gAX9_jmD2&_nc_ht=scontent.fsof8-1.fna&oh=00_AfAXttcInKdR16Dp9uhcFF8p-OwxsPDxDHpTz0aHnxlrVA&oe=64C9280F');
-		margin:0;
-	}
+	
 
 	.registration-form {
 		width: 300px;
@@ -55,16 +52,16 @@
 </style>
 
 <div class="registration-form">
-	 <font color="#FFFFFF">
+	<font color="#000000">
 		<h2>Registration</h2>
 	</font>
 
 	 <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-		<font color="#FFFFFF" for="Name:">
+		<font color="#000000" for="Name:">
 		<label for="name">Name:</label>
 		</font>
 		<input type="text" id="name" name="name" required />
-		<font color="#FFFFFF" for="Email:">
+		<font color="#000000" for="Email:">
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required />
 

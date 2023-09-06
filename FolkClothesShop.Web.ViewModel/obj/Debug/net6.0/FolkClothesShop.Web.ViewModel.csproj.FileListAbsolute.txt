@@ -1,7 +1,6 @@
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.ViewModel\bin\Debug\net6.0\FolkClothesShop.Web.ViewModel.deps.json
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.ViewModel\bin\Debug\net6.0\FolkClothesShop.Web.ViewModel.dll
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.ViewModel\bin\Debug\net6.0\FolkClothesShop.Web.ViewModel.pdb
-D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.ViewModel\obj\Debug\net6.0\FolkClothesShop.Web.ViewModel.csproj.AssemblyReference.cache
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.ViewModel\obj\Debug\net6.0\FolkClothesShop.Web.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.ViewModel\obj\Debug\net6.0\FolkClothesShop.Web.ViewModel.AssemblyInfoInputs.cache
 D:\source\repos\ASP.NET\Project\FolkClothesShop\FolkClothesShop.Web.ViewModel\obj\Debug\net6.0\FolkClothesShop.Web.ViewModel.AssemblyInfo.cs
